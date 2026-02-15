@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  
+      align-items: center;      
+      background: #ffe6f0;
+      font-family: Arial, sans-serif;
+    }
+
+  
+    .heart {
+      position: relative;
+      width: 300px;    
+      height: 300px;
+      background: #ff4d6d;
+      transform: rotate(-45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: #ff4d6d;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -150px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 150px;
+      top: 0;
+    }
+
+   
+    .heart-content {
+      transform: rotate(45deg); 
+      color: white;
+      z-index: 1;
+    }
+
+    .heart-content p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+     h1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      background: white;
+      color: #ff4d6d;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffe6f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heart">
+    <div class="heart-content">
+      <title>Happy Valentine's Day :3</title>
+      <p>
+      My sweet duo !! I wanna tell you every day how much I like you and how giddy I feel with you. <br>
+      I can't wait for when we finally get to meet in person !! ((:<br>
+      Thank you for being someone I can yap to and confide in and I truly am so grateful every day for the fact you are still here and that we found each other despite our distance. <br><br>
+      </p>
+      <h1>You will never leave me right?</h1>
+      <button onclick="alert('YIPPEEE')">No, kitten</button>
+    </div>
+  </div>
+
+</body>
+</html>
